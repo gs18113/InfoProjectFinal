@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.control.RootController">
+	<children>
+		<VBox alignment="TOP_CENTER" prefHeight="768.0" prefWidth="1024.0">
+			<children>
+				<HBox prefHeight="720.0" prefWidth="1024.0">
+					<children>
+                  <VBox prefHeight="750.0" prefWidth="750.0">
+                     <children>
+                        <AnchorPane prefHeight="20.0" prefWidth="750.0">
+                           <children>
+      								<Button fx:id="textButton" mnemonicParsing="false" text="From Text" />
+      								<Button fx:id="imageButton" layoutX="123.0" mnemonicParsing="false" text="From Image" />
+                           </children>
+                        </AnchorPane>
+      						<AnchorPane fx:id="mainTextPane" prefHeight="730.0" prefWidth="750.0">
+      							<children>
+                        								<Group fx:id="textGroup" layoutX="10.0" layoutY="10.0">
+                        									<children>
+                        										<Button fx:id="loadTextButton" mnemonicParsing="false" text="Load Text..." />
+                        										<TextArea fx:id="textArea" layoutY="40.0" prefHeight="508.0" prefWidth="666.0" />
+                        									</children>
+                        								</Group>
+      								<Group fx:id="imageGroup" layoutX="10.0" layoutY="10.0">
+      									<children>
+      										<Button fx:id="loadImageButton" mnemonicParsing="false" text="Load Image..." />
+      										<Button fx:id="blankButton" layoutX="300.0" layoutY="600.0" mnemonicParsing="false" text="Make blank" />
+      										<ScrollPane fx:id="scrollPane" layoutY="40.0" prefHeight="477.0" prefWidth="651.0">
+      											<content>
+      												<Group fx:id="imageViewGroup">
+      													<children>
+      														<ImageView fx:id="imageView" fitHeight="472.0" fitWidth="643.0" layoutX="166.0" layoutY="464.0" pickOnBounds="true" preserveRatio="true" />
+      													</children>
+      												</Group>
+      											</content>
+      										</ScrollPane>
+      									</children>
+      								</Group>
+      								<Button layoutX="436.0" layoutY="654.0" mnemonicParsing="false" text="Save" />
+      							</children>
+      						</AnchorPane>
+                     </children>
+                  </VBox>
+						<AnchorPane fx:id="editPane" prefHeight="768.0" prefWidth="274.0" />
+					</children>
+				</HBox>
+				<Button mnemonicParsing="false" text="Start" />
+			</children>
+		</VBox>
+	</children>
+</AnchorPane>
