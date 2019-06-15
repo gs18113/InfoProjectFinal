@@ -13,7 +13,7 @@ public abstract class DataSet implements Serializable {
 		this.savedir = savedir;
 	}
 	
-	public void addData(Blank newData) {
+	public synchronized void addData(Blank newData) {
 		data.add(newData);
 	}
 	

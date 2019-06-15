@@ -2,9 +2,12 @@ package application.control;
 
 public class TextBlank extends Blank {
 
+	int l, r;
+
 	TextBlank(int l, int r, String str) {
 		super(str);
-		// TODO Auto-generated constructor stub
+		this.l = l;
+		this.r = r;
 	}
 
 }

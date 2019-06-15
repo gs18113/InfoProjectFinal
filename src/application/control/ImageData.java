@@ -5,8 +5,8 @@ import javafx.scene.image.Image;
 public class ImageData extends DataSet {
 
 	Image fullImage;
-	
-	public ImageData(String savedir, Image fullImage){
+
+	public ImageData(String savedir, Image fullImage) {
 		super(savedir);
 		this.fullImage = fullImage;
 		this.dataType = "Image";

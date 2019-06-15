@@ -1,12 +1,15 @@
 package application.control;
 
-import javafx.geometry.Bounds;
+
+import javafx.scene.shape.Rectangle;
 
 public class ImageBlank extends Blank {
 
-	ImageBlank(Bounds bounds, String str) {
+	Rectangle rect;
+
+	ImageBlank(Rectangle rect, String str) {
 		super(str);
-		// TODO Auto-generated constructor stub
+		this.rect = rect;
 	}
 
 }
