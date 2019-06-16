@@ -7,5 +7,8 @@ public class Blank implements Serializable {
 	Blank(String str){
 		this.str = str;
 	}
-	
+
+	public String getStr() {
+		return str;
+	}
 }

@@ -1,16 +1,26 @@
 package application.control;
 
 public class TextData extends DataSet {
-	
-	String fullText;
-	
-	public TextData(String savedir, String fullText){
+
+	private String fullText;
+	private String text;
+
+	public TextData(String savedir, String fullText, String text){
 		super(savedir);
 		this.fullText = fullText;
+		this.text = text;
 		this.dataType = "Text";
 	}
-	
-	/*
+
+	public String getText() {
+		return text;
+	}
+
+	public String getFullText() {
+		return fullText;
+	}
+
+/*
 	@Override
 	public void loadData(String filename) {
 		try {

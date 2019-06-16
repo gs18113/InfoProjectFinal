@@ -5,7 +5,11 @@ import javafx.scene.shape.Rectangle;
 
 public class ImageBlank extends Blank {
 
-	Rectangle rect;
+	private Rectangle rect;
+
+	public Rectangle getRect() {
+		return rect;
+	}
 
 	ImageBlank(Rectangle rect, String str) {
 		super(str);

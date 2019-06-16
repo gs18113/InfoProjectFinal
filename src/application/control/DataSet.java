@@ -4,19 +4,23 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public abstract class DataSet implements Serializable {
-	ArrayList<Blank> data;
+	ArrayList<Blank> blanks;
 	String savedir;
 	String dataType;
 	
 	public DataSet(String savedir){
-		data = new ArrayList<Blank>();
+		blanks = new ArrayList<Blank>();
 		this.savedir = savedir;
 	}
 	
 	public synchronized void addData(Blank newData) {
-		data.add(newData);
+		blanks.add(newData);
 	}
-	
+
+	public ArrayList<Blank> getBlanks() {
+		return blanks;
+	}
+
 	/*
 	public abstract void loadData(String filename);
 

@@ -6,6 +6,10 @@ public class ImageData extends DataSet {
 
 	Image fullImage;
 
+	public Image getFullImage() {
+		return fullImage;
+	}
+
 	public ImageData(String savedir, Image fullImage) {
 		super(savedir);
 		this.fullImage = fullImage;
