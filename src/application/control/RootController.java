@@ -7,11 +7,14 @@ import javafx.concurrent.Service;
 import javafx.concurrent.Task;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Bounds;
 import javafx.geometry.Pos;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Group;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.SnapshotParameters;
 import javafx.scene.control.*;
 import javafx.scene.control.Button;
@@ -28,6 +31,8 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Font;
+import javafx.scene.text.Text;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -52,7 +57,7 @@ public class RootController implements Initializable {
     @FXML
     Button textButton, imageButton, imageBlankButton, textBlankButton, saveButton, loadButton;
     @FXML
-    Button loadTextButton, loadImageButton;
+    Button loadTextButton, loadImageButton, startButton;
     @FXML
     Group imageViewGroup, imageGroup, textGroup;
     @FXML
@@ -225,6 +230,21 @@ public class RootController implements Initializable {
             dataSaver.load(file.getAbsolutePath());
         });
 
+
+        startButton.setOnAction(e -> {
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/test.fxml"));
+                Parent parent = (Parent) loader.load();
+                ((TestController) loader.getController()).setDataset(dataset);
+                Scene newScene = new Scene(parent);
+                Stage newStage = new Stage();
+                newStage.setScene(newScene);
+                newStage.show();
+            } catch(Exception ee){
+                //System.out.println(ee.getMessage());
+                ee.printStackTrace();
+            }
+        });
     }
 
     void saveAction(){
@@ -339,7 +359,6 @@ public class RootController implements Initializable {
     }
 
     class DataPane extends HBox {
-        // TODO
         Label blankNumLabel = new Label();
         TextField blankTextField = new TextField();
         String str;
@@ -441,19 +460,10 @@ public class RootController implements Initializable {
             Graphics2D graphics = bufImageGray.createGraphics();
             graphics.drawImage(bufImageARGB, 0, 0, null);
 
-            /*
-            try {
-                File file = new File("./saveddata/cap.jpg");
-                file.createNewFile();
-
-                ImageIO.write(bufImageGray, "jpg", file);
-
-                System.out.println( "Image saved to " + file.getAbsolutePath());
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            */
+            Text text = new Text(bounds.getMinX()+bounds.getWidth()/2 - 2, bounds.getMinY()+bounds.getHeight()/2 - 2, "[" + (imageGroup.getChildren().size()-2) + "]");
+            text.setFill(Color.RED);
+            text.setFont(new Font(13));
+            imageViewGroup.getChildren().add(text);
 
             rect = new Rectangle(0, 0, 0, 0);
             imageGroup.getChildren().add(rect);

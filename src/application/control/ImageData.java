@@ -1,10 +1,12 @@
 package application.control;
 
 import javafx.scene.image.Image;
+import javafx.scene.text.Text;
 
 public class ImageData extends DataSet {
 
  	String imagePath;
+
 
 	public Image getFullImage() {
 		return new Image(imagePath);

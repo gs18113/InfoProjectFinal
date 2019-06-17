@@ -64,6 +64,6 @@
           </HBox>
                 <Button fx:id="saveButton" layoutX="421.0" layoutY="694.0" mnemonicParsing="false" text="Save" />
                 <Button fx:id="loadButton" layoutX="546.0" layoutY="695.0" mnemonicParsing="false" text="Load" />
-          <Button layoutX="479.0" layoutY="733.0" mnemonicParsing="false" text="Start" />
+          <Button fx:id="startButton" layoutX="479.0" layoutY="733.0" mnemonicParsing="false" text="Start" />
     </children>
 </AnchorPane>

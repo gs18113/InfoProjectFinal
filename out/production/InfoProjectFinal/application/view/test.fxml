@@ -1,8 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+<AnchorPane fx:id="root" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.control.TestController">
+    <children>
+        <HBox fx:id="mainHBox" prefHeight="690.0" prefWidth="1024.0">
+            <children>
+                <VBox fx:id="mainVBox" prefHeight="690.0" prefWidth="692.0">
+                    <children>
+                        <AnchorPane prefHeight="20.0" prefWidth="740.0">
+                            <VBox.margin>
+                                <Insets left="10.0" top="10.0"/>
+                            </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="mainTextPane" prefHeight="600.0" prefWidth="750.0">
+                            <children>
+                                <Group fx:id="textGroup" layoutX="10.0" layoutY="10.0">
+                                    <children>
+                                        <TextArea fx:id="previewArea" prefHeight="600.0" prefWidth="660.0"/>
+                                    </children>
+                                </Group>
+                                <Group fx:id="imageGroup" layoutX="10.0" layoutY="10.0">
+                                    <children>
+                                        <ScrollPane fx:id="scrollPane" layoutY="40.0" prefHeight="477.0"
+                                                    prefWidth="651.0">
+                                            <content>
+                                                <Group fx:id="imageViewGroup">
+                                                    <children>
+                                                        <ImageView fx:id="imageView" fitHeight="472.0" fitWidth="643.0"
+                                                                   layoutX="166.0" layoutY="464.0" pickOnBounds="true"
+                                                                   preserveRatio="true"/>
+                                                    </children>
+                                                </Group>
+                                            </content>
+                                        </ScrollPane>
+                                    </children>
+                                </Group>
+                                <Label fx:id="statLabel" layoutX="50.0" layoutY="615.0" text="Hello!"/>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+                <AnchorPane fx:id="setupPane" prefHeight="768.0"/>
+            </children>
+        </HBox>
+        <Button fx:id="readyButton" layoutX="479.0" layoutY="733.0" mnemonicParsing="false" text="I am Ready!"/>
+    </children>
 </AnchorPane>
-
