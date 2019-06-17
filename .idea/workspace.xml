@@ -2,29 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="CRLF to LF">
-      <change afterPath="$PROJECT_DIR$/src/application/images/check.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/images/cross.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/images/thinkingface.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/ImageBlank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/ImageBlank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$3$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$DataPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$DataPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$DataSaver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$DataSaver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$ImageCropper$DragContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$ImageCropper$DragContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$ImageCropper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$ImageCropper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$SetupUIController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$SetupUIController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/view/setting.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/view/setting.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/view/test.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/view/test.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/control/Blank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/control/Blank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/control/ImageBlank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/control/ImageBlank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/control/ImageData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/control/ImageData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/control/DataSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/control/DataSet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/control/RootController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/control/RootController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/control/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/control/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/setting.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/view/setting.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/view/test.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/view/test.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -78,178 +61,13 @@
     <breakpoint_rules converted="true" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/control/DataSet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="27" selection-start-column="27" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#441#442#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/control/ImageData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/application">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>application</OriginalElement>
-              <nodes>
-                <node x="0.0" y="119.0">application.control</node>
-                <node x="0.0" y="0.0">application.Main</node>
-                <node x="0.0" y="190.0">application.images</node>
-                <node x="173.0" y="190.0">application.view</node>
-              </nodes>
-              <notes />
-              <edges />
-              <settings layout="Hierarchic Group" zoom="1.0" x="-332.5" y="-140.0" />
-              <SelectedNodes>
-                <node>application.control</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-                <Category>Properties</Category>
-                <Category>Inner Classes</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/application.control">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>application.control</OriginalElement>
-              <nodes>
-                <node x="1110.0" y="509.0">application.control.TestController.DataPane</node>
-                <node x="563.0" y="929.0">application.control.RootController.SetupUIController</node>
-                <node x="1199.0" y="0.0">application.control.TestController</node>
-                <node x="318.0" y="929.0">application.control.RootController.DataSaver</node>
-                <node x="851.0" y="929.5">application.control.RootController.DataPane</node>
-                <node x="813.0" y="1433.5">application.control.TextData</node>
-                <node x="567.0" y="1433.0">application.control.ImageData</node>
-                <node x="243.0" y="1383.0">application.control.ImageBlank</node>
-                <node x="176.5" y="1234.0">application.control.Blank</node>
-                <node x="1344.0" y="533.0">application.control.TestController.SetupUIController</node>
-                <node x="415.25" y="0.0">application.control.RootController</node>
-                <node x="87.5" y="1115.0">application.control.RootController.ImageCropper.DragContext</node>
-                <node x="0.0" y="917.0">application.control.RootController.ImageCropper</node>
-                <node x="0.0" y="1444.0">application.control.TextBlank</node>
-                <node x="714.25" y="1234.0">application.control.DataSet</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="application.control.TextBlank" target="application.control.Blank">
-                  <point x="0.0" y="-49.5" />
-                  <point x="111.5" y="1358.0" />
-                  <point x="211.75" y="1358.0" />
-                  <point x="-35.25" y="49.5" />
-                </edge>
-                <edge source="application.control.TestController.SetupUIController" target="application.control.TestController">
-                  <point x="0.0" y="-62.0" />
-                  <point x="1478.0" y="484.0" />
-                  <point x="1421.75" y="484.0" />
-                  <point x="74.25" y="229.5" />
-                </edge>
-                <edge source="application.control.RootController.DataPane" target="application.control.RootController">
-                  <point x="0.0" y="-61.5" />
-                  <point x="958.0" y="887.0" />
-                  <point x="675.125" y="887.0" />
-                  <point x="111.375" y="433.5" />
-                </edge>
-                <edge source="application.control.RootController.ImageCropper.DragContext" target="application.control.RootController.ImageCropper">
-                  <point x="0.0" y="-37.0" />
-                  <point x="0.0" y="74.0" />
-                </edge>
-                <edge source="application.control.TextData" target="application.control.DataSet">
-                  <point x="0.0" y="-49.5" />
-                  <point x="944.5" y="1408.0" />
-                  <point x="861.25" y="1408.0" />
-                  <point x="49.0" y="74.5" />
-                </edge>
-                <edge source="application.control.TestController.DataPane" target="application.control.TestController">
-                  <point x="0.0" y="-86.0" />
-                  <point x="1217.0" y="484.0" />
-                  <point x="1273.25" y="484.0" />
-                  <point x="-74.25" y="229.5" />
-                </edge>
-                <edge source="application.control.ImageData" target="application.control.DataSet">
-                  <point x="0.0" y="-50.0" />
-                  <point x="680.0" y="1408.0" />
-                  <point x="763.25" y="1408.0" />
-                  <point x="-49.0" y="74.5" />
-                </edge>
-                <edge source="application.control.RootController.ImageCropper" target="application.control.RootController">
-                  <point x="0.0" y="-74.0" />
-                  <point x="149.0" y="887.0" />
-                  <point x="452.375" y="887.0" />
-                  <point x="-111.375" y="433.5" />
-                </edge>
-                <edge source="application.control.RootController.SetupUIController" target="application.control.RootController">
-                  <point x="0.0" y="-62.0" />
-                  <point x="697.0" y="897.0" />
-                  <point x="600.875" y="897.0" />
-                  <point x="37.125" y="433.5" />
-                </edge>
-                <edge source="application.control.RootController.DataSaver" target="application.control.RootController">
-                  <point x="0.0" y="-62.0" />
-                  <point x="430.5" y="897.0" />
-                  <point x="526.625" y="897.0" />
-                  <point x="-37.125" y="433.5" />
-                </edge>
-                <edge source="application.control.ImageBlank" target="application.control.Blank">
-                  <point x="0.0" y="-110.5" />
-                  <point x="382.5" y="1358.0" />
-                  <point x="282.25" y="1358.0" />
-                  <point x="35.25" y="49.5" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.5892063492063492" x="43.95797413793099" y="397.32758620689657" />
-              <SelectedNodes>
-                <node>application.control.ImageData</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-                <Category>Properties</Category>
-                <Category>Inner Classes</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/control/TextBlank.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -260,15 +78,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/control/DataSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#346#347#0" expanded="true" />
+                <element signature="e#372#373#0" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
+                <element signature="e#432#433#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/control/Blank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="27" selection-start-column="27" selection-end-column="27" />
+            <state relative-caret-position="315">
+              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
               <folding>
-                <element signature="e#184#185#0" expanded="true" />
-                <element signature="e#201#202#0" expanded="true" />
-                <element signature="e#252#253#0" expanded="true" />
-                <element signature="e#266#267#0" expanded="true" />
+                <element signature="e#228#229#0" expanded="true" />
+                <element signature="e#242#243#0" expanded="true" />
+                <element signature="e#273#274#0" expanded="true" />
+                <element signature="e#287#288#0" expanded="true" />
+                <element signature="e#343#344#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -282,8 +117,17 @@
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#449#450#0" expanded="true" />
-                <element signature="e#472#473#0" expanded="true" />
+                <element signature="e#485#486#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -291,23 +135,56 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/application/control/RootController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="462" column="154" selection-start-line="462" selection-start-column="154" selection-end-line="462" selection-end-column="154" />
+            <state relative-caret-position="90">
+              <caret line="256" column="42" selection-start-line="256" selection-start-column="42" selection-end-line="256" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#14645#14646#0" expanded="true" />
-                <element signature="e#14693#14694#0" expanded="true" />
+                <element signature="e#3069#3667#0" />
+                <element signature="e#3707#4471#0" />
+                <element signature="e#4512#5163#0" />
+                <element signature="e#5218#5731#0" />
+                <element signature="e#5770#6695#0" />
+                <element signature="e#6917#7200#0" />
+                <element signature="e#7470#8089#0" />
+                <element signature="e#9458#10232#0" />
+                <element signature="e#10356#10526#0" />
+                <element signature="e#8866#9749#0" />
+                <element signature="e#9755#11799#0" />
+                <element signature="e#9816#11772#0" expanded="true" />
+                <element signature="e#11771#11772#0" expanded="true" />
+                <element signature="e#11805#12575#0" />
+                <element signature="e#12694#13129#0" />
+                <element signature="e#15835#19457#0" />
+                <element signature="e#15997#15998#0" expanded="true" />
+                <element signature="e#16033#16034#0" expanded="true" />
+                <element signature="e#16356#16357#0" expanded="true" />
+                <element signature="e#16404#16405#0" expanded="true" />
+                <element signature="e#16465#16466#0" expanded="true" />
+                <element signature="e#16523#16524#0" expanded="true" />
+                <element signature="e#16560#16561#0" expanded="true" />
+                <element signature="e#16603#16604#0" expanded="true" />
+                <element signature="e#16649#16650#0" expanded="true" />
+                <element signature="e#16697#16698#0" expanded="true" />
+                <element signature="e#16735#16736#0" expanded="true" />
+                <element signature="e#16778#16779#0" expanded="true" />
+                <element signature="e#16825#16826#0" expanded="true" />
+                <element signature="e#16873#16874#0" expanded="true" />
+                <element signature="e#17502#17503#0" expanded="true" />
+                <element signature="e#17554#17555#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/view/test.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+        <entry file="file://$PROJECT_DIR$/src/application/control/TextData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="86" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
+            <state relative-caret-position="37">
+              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+              <folding>
+                <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#323#324#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -315,13 +192,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/control/TestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="-337">
+              <caret line="50" column="82" lean-forward="true" selection-start-line="50" selection-start-column="82" selection-end-line="50" selection-end-column="82" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#SetupUIController#0;class#SetupUIController#0;class#TestController#0" />
+                <element signature="method#update#0;class#SetupUIController#0;class#TestController#0" />
                 <element signature="method#updatePreview#0;class#TestController#0" />
-                <element signature="e#3651#4343#0" expanded="true" />
-                <element signature="e#4342#4343#0" expanded="true" />
+                <element signature="method#setDataset#0;class#TestController#0" />
               </folding>
             </state>
           </provider>
@@ -347,16 +225,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/application/control/DataSet.java" />
         <option value="$PROJECT_DIR$/src/application/control/TextBlank.java" />
         <option value="$PROJECT_DIR$/src/application/control/TextData.java" />
         <option value="$PROJECT_DIR$/src/application/view/setting.fxml" />
         <option value="$PROJECT_DIR$/src/application/view/test.fxml" />
-        <option value="$PROJECT_DIR$/src/application/Main.java" />
         <option value="$PROJECT_DIR$/src/application/control/ImageData.java" />
         <option value="$PROJECT_DIR$/src/application/control/ImageBlank.java" />
-        <option value="$PROJECT_DIR$/src/application/control/Blank.java" />
+        <option value="$PROJECT_DIR$/src/application/control/DataSet.java" />
         <option value="$PROJECT_DIR$/src/application/control/TestController.java" />
+        <option value="$PROJECT_DIR$/src/application/control/Blank.java" />
+        <option value="$PROJECT_DIR$/src/application/Main.java" />
         <option value="$PROJECT_DIR$/src/application/control/RootController.java" />
       </list>
     </option>
@@ -364,9 +242,9 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="64" />
-    <option name="y" value="-11" />
+    <option name="y" value="-4" />
     <option name="width" value="1857" />
-    <option name="height" value="1092" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -377,7 +255,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -408,6 +286,13 @@
               <item name="InfoProjectFinal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InfoProjectFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InfoProjectFinal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -418,7 +303,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -551,7 +436,8 @@
       <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
-      <workItem from="1560767438801" duration="2246000" />
+      <workItem from="1560767438801" duration="3540000" />
+      <workItem from="1560775155648" duration="7234000" />
     </task>
     <task id="LOCAL-00001" summary="CRLF to LF">
       <created>1560588597907</created>
@@ -564,7 +450,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3548000" />
+    <option name="totallyTimeSpent" value="12076000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -577,30 +463,31 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.23825318" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.24101713" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Designer" order="5" />
       <window_info id="Favorites" order="6" weight="0.32946378" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.33019853" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3282365" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3291536" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Application Servers" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3291536" />
-      <window_info anchor="bottom" id="Problems" order="10" />
-      <window_info anchor="bottom" id="Changes" order="11" />
-      <window_info anchor="bottom" id="Profiler" order="12" />
-      <window_info anchor="bottom" id="Event Log" order="13" weight="0.32810867" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.3291536" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32846716" />
+      <window_info anchor="bottom" id="Database Changes" order="2" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.3282365" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.39959225" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.3291536" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Application Servers" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3291536" />
+      <window_info anchor="bottom" id="Problems" order="12" />
+      <window_info anchor="bottom" id="Changes" order="13" />
+      <window_info anchor="bottom" id="Profiler" order="14" />
+      <window_info anchor="bottom" id="Event Log" order="15" weight="0.32810867" />
+      <window_info anchor="bottom" id="Messages" order="16" visible="true" weight="0.3282365" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -644,36 +531,10 @@
     <entry file="file://$PROJECT_DIR$/saveddata/cap.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/view/setting.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/jdk1.8.0_201/javafx-src.zip!/javafx/scene/image/Image.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="1109" selection-start-line="1109" selection-end-line="1109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/control/TextData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
         </state>
       </provider>
     </entry>
@@ -700,18 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/control/DataSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/application">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -725,7 +574,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-332.5" y="-140.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-332.0" y="-140.0" />
           <SelectedNodes>
             <node>application.control</node>
           </SelectedNodes>
@@ -738,16 +587,6 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/control/ImageData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -782,6 +621,22 @@
           </nodes>
           <notes />
           <edges>
+            <edge source="application.control.RootController.ImageCropper.DragContext" target="application.control.RootController.ImageCropper">
+              <point x="0.0" y="-37.0" />
+              <point x="0.0" y="74.0" />
+            </edge>
+            <edge source="application.control.TextData" target="application.control.DataSet">
+              <point x="0.0" y="-49.5" />
+              <point x="944.5" y="1408.0" />
+              <point x="861.25" y="1408.0" />
+              <point x="49.0" y="74.5" />
+            </edge>
+            <edge source="application.control.RootController.SetupUIController" target="application.control.RootController">
+              <point x="0.0" y="-62.0" />
+              <point x="697.0" y="897.0" />
+              <point x="600.875" y="897.0" />
+              <point x="37.125" y="433.5" />
+            </edge>
             <edge source="application.control.TextBlank" target="application.control.Blank">
               <point x="0.0" y="-49.5" />
               <point x="111.5" y="1358.0" />
@@ -794,21 +649,17 @@
               <point x="1421.75" y="484.0" />
               <point x="74.25" y="229.5" />
             </edge>
+            <edge source="application.control.RootController.DataSaver" target="application.control.RootController">
+              <point x="0.0" y="-62.0" />
+              <point x="430.5" y="897.0" />
+              <point x="526.625" y="897.0" />
+              <point x="-37.125" y="433.5" />
+            </edge>
             <edge source="application.control.RootController.DataPane" target="application.control.RootController">
               <point x="0.0" y="-61.5" />
               <point x="958.0" y="887.0" />
               <point x="675.125" y="887.0" />
               <point x="111.375" y="433.5" />
-            </edge>
-            <edge source="application.control.RootController.ImageCropper.DragContext" target="application.control.RootController.ImageCropper">
-              <point x="0.0" y="-37.0" />
-              <point x="0.0" y="74.0" />
-            </edge>
-            <edge source="application.control.TextData" target="application.control.DataSet">
-              <point x="0.0" y="-49.5" />
-              <point x="944.5" y="1408.0" />
-              <point x="861.25" y="1408.0" />
-              <point x="49.0" y="74.5" />
             </edge>
             <edge source="application.control.TestController.DataPane" target="application.control.TestController">
               <point x="0.0" y="-86.0" />
@@ -828,18 +679,6 @@
               <point x="452.375" y="887.0" />
               <point x="-111.375" y="433.5" />
             </edge>
-            <edge source="application.control.RootController.SetupUIController" target="application.control.RootController">
-              <point x="0.0" y="-62.0" />
-              <point x="697.0" y="897.0" />
-              <point x="600.875" y="897.0" />
-              <point x="37.125" y="433.5" />
-            </edge>
-            <edge source="application.control.RootController.DataSaver" target="application.control.RootController">
-              <point x="0.0" y="-62.0" />
-              <point x="430.5" y="897.0" />
-              <point x="526.625" y="897.0" />
-              <point x="-37.125" y="433.5" />
-            </edge>
             <edge source="application.control.ImageBlank" target="application.control.Blank">
               <point x="0.0" y="-110.5" />
               <point x="382.5" y="1358.0" />
@@ -847,7 +686,7 @@
               <point x="35.25" y="49.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.5892063492063492" x="43.95797413793099" y="397.32758620689657" />
+          <settings layout="Hierarchic Group" zoom="0.5892063492063492" x="44.0" y="397.0" />
           <SelectedNodes>
             <node>application.control.ImageData</node>
           </SelectedNodes>
@@ -863,23 +702,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/view/setting.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/control/ImageData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/view/test.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="86" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/control/Blank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/control/DataSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/control/TextData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding>
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/control/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-337">
+          <caret line="50" column="82" lean-forward="true" selection-start-line="50" selection-start-column="82" selection-end-line="50" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#SetupUIController#0;class#SetupUIController#0;class#TestController#0" />
+            <element signature="method#update#0;class#SetupUIController#0;class#TestController#0" />
+            <element signature="method#updatePreview#0;class#TestController#0" />
+            <element signature="method#setDataset#0;class#TestController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/images/check.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/images/cross.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/control/TextBlank.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/control/Blank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
-          <folding>
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -890,40 +801,56 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/view/test.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/application/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="86" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/control/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="method#SetupUIController#0;class#SetupUIController#0;class#TestController#0" />
-            <element signature="method#updatePreview#0;class#TestController#0" />
-            <element signature="e#3651#4343#0" expanded="true" />
-            <element signature="e#4342#4343#0" expanded="true" />
-          </folding>
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/control/RootController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="462" column="154" selection-start-line="462" selection-start-column="154" selection-end-line="462" selection-end-column="154" />
+        <state relative-caret-position="90">
+          <caret line="256" column="42" selection-start-line="256" selection-start-column="42" selection-end-line="256" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#14645#14646#0" expanded="true" />
-            <element signature="e#14693#14694#0" expanded="true" />
+            <element signature="e#3069#3667#0" />
+            <element signature="e#3707#4471#0" />
+            <element signature="e#4512#5163#0" />
+            <element signature="e#5218#5731#0" />
+            <element signature="e#5770#6695#0" />
+            <element signature="e#6917#7200#0" />
+            <element signature="e#7470#8089#0" />
+            <element signature="e#9458#10232#0" />
+            <element signature="e#10356#10526#0" />
+            <element signature="e#8866#9749#0" />
+            <element signature="e#9755#11799#0" />
+            <element signature="e#9816#11772#0" expanded="true" />
+            <element signature="e#11771#11772#0" expanded="true" />
+            <element signature="e#11805#12575#0" />
+            <element signature="e#12694#13129#0" />
+            <element signature="e#15835#19457#0" />
+            <element signature="e#15997#15998#0" expanded="true" />
+            <element signature="e#16033#16034#0" expanded="true" />
+            <element signature="e#16356#16357#0" expanded="true" />
+            <element signature="e#16404#16405#0" expanded="true" />
+            <element signature="e#16465#16466#0" expanded="true" />
+            <element signature="e#16523#16524#0" expanded="true" />
+            <element signature="e#16560#16561#0" expanded="true" />
+            <element signature="e#16603#16604#0" expanded="true" />
+            <element signature="e#16649#16650#0" expanded="true" />
+            <element signature="e#16697#16698#0" expanded="true" />
+            <element signature="e#16735#16736#0" expanded="true" />
+            <element signature="e#16778#16779#0" expanded="true" />
+            <element signature="e#16825#16826#0" expanded="true" />
+            <element signature="e#16873#16874#0" expanded="true" />
+            <element signature="e#17502#17503#0" expanded="true" />
+            <element signature="e#17554#17555#0" expanded="true" />
           </folding>
         </state>
       </provider>

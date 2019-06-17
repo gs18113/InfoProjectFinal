@@ -19,12 +19,14 @@ import javafx.scene.SnapshotParameters;
 import javafx.scene.control.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.WritableImage;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
@@ -44,8 +46,10 @@ import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
+import java.lang.reflect.Array;
 import java.net.URL;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class RootController implements Initializable {
@@ -119,6 +123,7 @@ public class RootController implements Initializable {
             textGroup.setVisible(false);
             previewCheckBox.setSelected(false);
             previewService.cancel();
+            imageCropper.reset();
         });
 
         loadImageButton.setOnAction(e -> {
@@ -143,11 +148,20 @@ public class RootController implements Initializable {
             try {
                 String result = instance.doOCR(img);
                 System.out.println("OCR result:" + result);
-                dataset.addData(new ImageBlank(bounds, result));
+                ImageBlank newBlank = new ImageBlank(bounds, result);
+                dataset.addData(newBlank);
+                imageCropper.getRects().get(imageCropper.getRects().size()-1).setData(newBlank);
                 statLabel.setText("Blank generation success!");
+                statLabel.setTextFill(Color.BLUE);
                 setupUIController.update();
             } catch (TesseractException ex) {
                 System.out.println(ex.getMessage());
+                ImageBlank newBlank = new ImageBlank(bounds, "");
+                dataset.addData(newBlank);
+                imageCropper.getRects().get(imageCropper.getRects().size()-1).setData(newBlank);
+                statLabel.setText("OCR ERROR: Set string to default.");
+                statLabel.setTextFill(Color.RED);
+                setupUIController.update();
             }
         });
 
@@ -193,6 +207,7 @@ public class RootController implements Initializable {
 
         textBlankButton.setOnAction(e -> {
             statLabel.setText("Generating blanks...");
+            statLabel.setTextFill(Color.BLACK);
             updateText();
         });
 
@@ -214,6 +229,7 @@ public class RootController implements Initializable {
                 saveAction();
             } else {
                 statLabel.setText("No data to save. aborted.");
+                statLabel.setTextFill(Color.RED);
             }
         });
 
@@ -230,7 +246,6 @@ public class RootController implements Initializable {
             dataSaver.load(file.getAbsolutePath());
         });
 
-
         startButton.setOnAction(e -> {
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/test.fxml"));
@@ -239,15 +254,45 @@ public class RootController implements Initializable {
                 Scene newScene = new Scene(parent);
                 Stage newStage = new Stage();
                 newStage.setScene(newScene);
+                newStage.setTitle("Test!");
                 newStage.show();
             } catch(Exception ee){
                 //System.out.println(ee.getMessage());
                 ee.printStackTrace();
             }
         });
+
+        MouseContext context = new MouseContext();
+        ContextMenu contextMenu = new ContextMenu();
+        MenuItem deleteMenuItem = new MenuItem("Delete");
+        deleteMenuItem.setOnAction(e -> {
+            for(int i=0;i<imageCropper.getRects().size();i++){
+                ImageCropper.RectContext rectContext = imageCropper.getRects().get(i);
+                Bounds bounds = rectContext.getRectangle().getBoundsInParent();
+                if(bounds.getMinX()<context.x&&context.x<bounds.getMaxX()&&bounds.getMinY()<context.y&&context.y<bounds.getMaxY()){
+                    imageCropper.getRects().remove(rectContext);
+                    imageViewGroup.getChildren().remove(rectContext.getRectangle());
+                    imageViewGroup.getChildren().remove(rectContext.getText());
+                    dataset.getBlanks().remove(rectContext.getData());
+                    imageCropper.updateImageIndex();
+                    break;
+                }
+            }
+            setupUIController.update();
+        });
+        contextMenu.getItems().add(deleteMenuItem);
+
+        imageViewGroup.addEventHandler(MouseEvent.MOUSE_PRESSED, e -> {
+            context.x = e.getX();
+            context.y = e.getY();
+            if(e.isSecondaryButtonDown()){
+                contextMenu.show(imageViewGroup, e.getScreenX(), e.getScreenY());
+
+            }
+        });
     }
 
-    void saveAction(){
+    private void saveAction(){
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Current save path: " + dataSaver.getSavepath() + "\n Select new path?", ButtonType.YES, ButtonType.NO, ButtonType.CANCEL);
         alert.showAndWait();
         if (alert.getResult() == ButtonType.YES) {
@@ -262,6 +307,7 @@ public class RootController implements Initializable {
         }
         dataSaver.save(dataset, "DATA_" + LocalDateTime.now().toString() + ".blankdata");
         statLabel.setText("Save complete.");
+        statLabel.setTextFill(Color.GREEN);
     }
 
     private synchronized void updateText() {
@@ -277,6 +323,7 @@ public class RootController implements Initializable {
                         if (l != -1) {
                             Platform.runLater(() -> {
                                 statLabel.setText("Text format error: aborted.");
+                                statLabel.setTextFill(Color.RED);
                             });
                             dataset = null;
                             return null;
@@ -287,6 +334,7 @@ public class RootController implements Initializable {
                         if (l == -1) {
                             Platform.runLater(() -> {
                                 statLabel.setText("Text format error: aborted.");
+                                statLabel.setTextFill(Color.RED);
                             });
                             dataset = null;
                             return null;
@@ -299,6 +347,7 @@ public class RootController implements Initializable {
                 if (l != -1) {
                     Platform.runLater(() -> {
                         statLabel.setText("Text format error: aborted.");
+                        statLabel.setTextFill(Color.RED);
                     });
                     dataset = null;
                     return null;
@@ -307,6 +356,7 @@ public class RootController implements Initializable {
                     updatePreview();
                     setupUIController.update();
                     statLabel.setText("Blank generation success!");
+                    statLabel.setTextFill(Color.BLUE);
                 });
                 return null;
             }
@@ -353,7 +403,7 @@ public class RootController implements Initializable {
         void update() {
             vBox.getChildren().clear();
             for (int i = 0; i < dataset.getBlanks().size(); i++) {
-                vBox.getChildren().add(new DataPane(i + 1, dataset.getBlanks().get(i).getStr()));
+                vBox.getChildren().add(new DataPane(i + 1, dataset.getBlanks().get(i)));
             }
         }
     }
@@ -361,19 +411,21 @@ public class RootController implements Initializable {
     class DataPane extends HBox {
         Label blankNumLabel = new Label();
         TextField blankTextField = new TextField();
-        String str;
+        Blank parent;
 
-        public DataPane(int num, String s) {
+        public DataPane(int num, Blank parent) {
             super();
+            this.parent = parent;
             setAlignment(Pos.CENTER_LEFT);
             setSpacing(5);
             this.blankNumLabel.setText("[" + num + "]");
-            this.blankTextField.setText(s);
-            this.str = s;
+            this.blankTextField.setText(parent.getStr());
             this.getChildren().addAll(this.blankNumLabel, this.blankTextField);
             this.blankNumLabel.setLayoutY(5);
             this.blankTextField.setLayoutY(20);
-            this.blankTextField.textProperty().addListener((observable, oldValue, newValue) -> str = newValue);
+            this.blankTextField.textProperty().addListener((observable, oldValue, newValue) -> {
+                parent.setStr(newValue);
+            });
         }
     }
 
@@ -403,14 +455,67 @@ public class RootController implements Initializable {
         this.currentStage = currentStage;
     }
 
+    class MouseContext {
+        public double x, y;
+    }
+
     class ImageCropper {
         Group layer;
+        ArrayList<RectContext> rects = new ArrayList<>();
+        private int imageCount=1;
 
-        class DragContext {
-            public double x, y;
+        public ArrayList<RectContext> getRects() {
+            return rects;
         }
 
-        DragContext dragContext = new DragContext();
+        class RectContext{
+            Rectangle rectangle;
+            Text text;
+            Blank data;
+
+            public RectContext(Rectangle rectangle, Text text, Blank data) {
+                this.rectangle = rectangle;
+                this.text = text;
+                this.data = data;
+            }
+
+            public Rectangle getRectangle() {
+                return rectangle;
+            }
+
+            public void setRectangle(Rectangle rectangle) {
+                this.rectangle = rectangle;
+            }
+
+            public Text getText() {
+                return text;
+            }
+
+            public void setText(Text text) {
+                this.text = text;
+            }
+
+            public Blank getData() {
+                return data;
+            }
+
+            public void setData(Blank data) {
+                this.data = data;
+            }
+        }
+
+        public void setImageCount(int imageCount) {
+            this.imageCount = imageCount;
+        }
+
+        public void updateImageIndex(){
+            for(int i=0;i<rects.size();i++){
+                rects.get(i).getText().setText("["+(i+1)+"]");
+            }
+            imageCount = rects.size()+1;
+        }
+
+        MouseContext dragContext = new MouseContext();
         Rectangle rect;
 
         ImageCropper(Group layer) {
@@ -419,8 +524,9 @@ public class RootController implements Initializable {
             rect.setStroke(Color.BLUE);
             rect.setFill(Color.LIGHTGRAY.deriveColor(0, 0, 1, 0.5));
 
-            layer.setOnMousePressed(e -> {
-                this.layer.getChildren().remove(rect);
+            layer.addEventHandler(MouseEvent.MOUSE_PRESSED, e -> {
+                if(e.isSecondaryButtonDown()) return;
+                if(rect!=null) this.layer.getChildren().remove(rect);
                 rect = new Rectangle(e.getX(), e.getY(), 0, 0);
                 rect.setStroke(Color.BLUE);
                 rect.setFill(Color.LIGHTGRAY.deriveColor(0, 0, 1, 0.5));
@@ -430,6 +536,7 @@ public class RootController implements Initializable {
             });
 
             layer.setOnMouseDragged(e -> {
+                if(e.isSecondaryButtonDown()) return;
                 rect.setX(Math.min(e.getX(), dragContext.x));
                 rect.setY(Math.min(e.getY(), dragContext.y));
                 rect.setWidth(Math.abs(e.getX() - dragContext.x));
@@ -437,8 +544,14 @@ public class RootController implements Initializable {
             });
 
             layer.setOnMouseReleased(e -> {
+                if(e.isSecondaryButtonDown()) return;
                 imageBlankButton.setDisable(false);
             });
+        }
+
+        void reset(){
+            imageCount = 1;
+            rects.clear();
         }
 
         Pair<BufferedImage, Bounds> crop() {
@@ -460,13 +573,13 @@ public class RootController implements Initializable {
             Graphics2D graphics = bufImageGray.createGraphics();
             graphics.drawImage(bufImageARGB, 0, 0, null);
 
-            Text text = new Text(bounds.getMinX()+bounds.getWidth()/2 - 2, bounds.getMinY()+bounds.getHeight()/2 - 2, "[" + (imageGroup.getChildren().size()-2) + "]");
-            text.setFill(Color.RED);
+            Text text = new Text(bounds.getMinX()+bounds.getWidth()/2 - 2, bounds.getMinY()+bounds.getHeight()/2 - 2, "[" + (imageCount++) + "]");
+            text.setFill(Color.GREEN);
             text.setFont(new Font(13));
             imageViewGroup.getChildren().add(text);
+            rects.add(new RectContext(rect, text, null));
 
-            rect = new Rectangle(0, 0, 0, 0);
-            imageGroup.getChildren().add(rect);
+            rect = null;
 
             return new Pair(bufImageGray, bounds);
 
@@ -522,15 +635,22 @@ public class RootController implements Initializable {
                     imageGroup.setVisible(false);
                     textGroup.setVisible(true);
                     textArea.setText(((TextData) dataset).getFullText());
-                    updateText();
+                    updatePreview();
                     setupUIController.update();
                 } else {
                     imageGroup.setVisible(true);
                     textGroup.setVisible(false);
                     imageView.setImage(((ImageData) dataset).getFullImage());
+                    imageCropper.reset();
                     for (int i = 0; i < dataset.getBlanks().size(); i++) {
-                        imageViewGroup.getChildren().add(((ImageBlank) dataset.getBlanks().get(i)).getRect());
+                        Rectangle loadedRect = ((ImageBlank) dataset.getBlanks().get(i)).getRect();
+                        imageViewGroup.getChildren().add(loadedRect);
+                        Bounds bounds = loadedRect.getBoundsInParent();
+                        Text loadedText = new Text(bounds.getMinX()+bounds.getWidth()/2 - 2, bounds.getMinY()+bounds.getHeight()/2 - 2, "[" + (i+1) + "]");
+                        imageViewGroup.getChildren().add(loadedText);
+                        imageCropper.getRects().add(imageCropper.new RectContext(loadedRect, loadedText, dataset.getBlanks().get(i)));
                     }
+                    imageCropper.setImageCount(dataset.getBlanks().size()+1);
                     setupUIController.update();
                 }
                 return;

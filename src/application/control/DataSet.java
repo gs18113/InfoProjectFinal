@@ -3,8 +3,8 @@ package application.control;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public abstract class DataSet implements Serializable {
-	ArrayList<Blank> blanks;
+public class DataSet implements Serializable {
+	private ArrayList<Blank> blanks;
 	String savedir;
 	String dataType;
 	

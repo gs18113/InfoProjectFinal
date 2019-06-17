@@ -80,6 +80,7 @@ public class TestController implements Initializable {
             for (int i = 0; i < dataset.getBlanks().size(); i++) {
                 boolean right = dataset.getBlanks().get(i).getStr().replaceAll("\\s+","").equalsIgnoreCase(((DataPane) vBox.getChildren().get(i)).getStr().replaceAll("\\s+",""));
                 if (right) rightCnt++;
+                else dataset.getBlanks().get(i).increaseWrong();
                 ((DataPane) vBox.getChildren().get(i)).setImage(right);
             }
             statLabel.setText("Correct: " + rightCnt + " Wrong: " + (dataset.getBlanks().size() - rightCnt));
@@ -106,6 +107,11 @@ public class TestController implements Initializable {
             this.blankNumLabel.setLayoutY(5);
             this.blankTextField.setLayoutY(20);
             this.blankTextField.textProperty().addListener((observable, oldValue, newValue) -> str = newValue);
+            this.rightImage.setOnMousePressed(e -> {
+                if(e.isSecondaryButtonDown()){
+
+                }
+            });
         }
 
         public String getStr() {
@@ -113,7 +119,7 @@ public class TestController implements Initializable {
         }
 
         public void setImage(boolean isRight) {
-            this.rightImage.setImage(isRight ? new Image(getClass().getResource(".../images/check.png").toString()) : new Image(getClass().getResource("../images/cross.png").toString()));
+            this.rightImage.setImage(isRight ? new Image(getClass().getResource("../images/check.png").toString()) : new Image(getClass().getResource("../images/cross.png").toString()));
         }
     }
 
