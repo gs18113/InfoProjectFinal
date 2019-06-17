@@ -3,24 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="CRLF to LF">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/Blank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/Blank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/DataSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/DataSet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/ImageBlank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/ImageBlank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/ImageData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/ImageData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$3$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$DataPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$DataPane.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$DataSaver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$DataSaver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$ImageCropper$DragContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$ImageCropper$DragContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$ImageCropper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController$ImageCropper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/RootController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/TextData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/control/TextData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/view/setting.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InfoProjectFinal/application/view/setting.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/control/Blank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/control/Blank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/control/DataSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/control/DataSet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/control/ImageBlank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/control/ImageBlank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/control/ImageData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/control/ImageData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/control/RootController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/control/RootController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/control/TextData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/control/TextData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/setting.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/view/setting.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,11 +72,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/control/ImageBlank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+            <state relative-caret-position="375">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
-                <element signature="e#156#157#0" expanded="true" />
-                <element signature="e#174#175#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,9 +84,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/control/TextData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="380">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
               <folding>
+                <element signature="e#305#306#0" expanded="true" />
                 <element signature="e#323#324#0" expanded="true" />
                 <element signature="e#256#257#0" expanded="true" />
                 <element signature="e#278#279#0" expanded="true" />
@@ -130,9 +122,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/control/ImageData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            <state relative-caret-position="210">
+              <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
               <folding>
+                <element signature="e#154#155#0" expanded="true" />
                 <element signature="e#177#178#0" expanded="true" />
               </folding>
             </state>
@@ -151,16 +144,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/application/control/RootController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="138" column="42" selection-start-line="138" selection-start-column="42" selection-end-line="138" selection-end-column="42" />
+            <state relative-caret-position="216">
+              <caret line="515" column="26" selection-start-line="515" selection-start-column="26" selection-end-line="515" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4941#5454#0" />
-                <element signature="e#5493#6418#0" />
-                <element signature="e#6458#6555#0" />
                 <element signature="class#SetupUIController#0;class#RootController#0" />
-                <element signature="class#DataSaver#0;class#RootController#0" />
-                <element signature="method#load#0;class#DataSaver#0;class#RootController#0" />
+                <element signature="e#16881#16882#0" expanded="true" />
+                <element signature="e#16929#16930#0" expanded="true" />
+                <element signature="e#16968#16969#0" expanded="true" />
+                <element signature="e#17007#17008#0" expanded="true" />
+                <element signature="e#17059#17060#0" expanded="true" />
+                <element signature="e#17107#17108#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -193,10 +187,10 @@
         <option value="$PROJECT_DIR$/src/application/control/DataSet.java" />
         <option value="$PROJECT_DIR$/src/application/control/Blank.java" />
         <option value="$PROJECT_DIR$/src/application/view/setting.fxml" />
-        <option value="$PROJECT_DIR$/src/application/control/ImageData.java" />
-        <option value="$PROJECT_DIR$/src/application/control/ImageBlank.java" />
         <option value="$PROJECT_DIR$/src/application/control/TextBlank.java" />
         <option value="$PROJECT_DIR$/src/application/control/TextData.java" />
+        <option value="$PROJECT_DIR$/src/application/control/ImageData.java" />
+        <option value="$PROJECT_DIR$/src/application/control/ImageBlank.java" />
         <option value="$PROJECT_DIR$/src/application/control/RootController.java" />
       </list>
     </option>
@@ -223,6 +217,11 @@
             <path>
               <item name="InfoProjectFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="InfoProjectFinal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InfoProjectFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InfoProjectFinal" type="462c0819:PsiDirectoryNode" />
+              <item name="saveddata" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InfoProjectFinal" type="b2602c69:ProjectViewProjectNode" />
@@ -270,7 +269,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560713303639" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560732885826" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="/opt/SceneBuilder/SceneBuilder" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -413,9 +412,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.23272526" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.23272526" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -424,7 +422,7 @@
       <window_info id="Favorites" order="6" weight="0.32946378" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.33019853" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3291536" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3291536" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
@@ -498,63 +496,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/view/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/view/setting.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/control/ImageBlank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <element signature="e#156#157#0" expanded="true" />
-            <element signature="e#174#175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/saveddata/DATA_2019-06-17T04:01:52.013.blankdata">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/control/ImageData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding>
-            <element signature="e#177#178#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/control/TextData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/control/TextBlank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/control/DataSet.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -568,18 +511,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/control/RootController.java">
+    <entry file="file://$PROJECT_DIR$/src/application/view/setting.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="138" column="42" selection-start-line="138" selection-start-column="42" selection-end-line="138" selection-end-column="42" />
+        <state>
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saveddata/cap.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/view/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/control/TextData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/control/ImageData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding>
+            <element signature="e#154#155#0" expanded="true" />
+            <element signature="e#177#178#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/control/ImageBlank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4941#5454#0" />
-            <element signature="e#5493#6418#0" />
-            <element signature="e#6458#6555#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/control/TextBlank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/control/RootController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="515" column="26" selection-start-line="515" selection-start-column="26" selection-end-line="515" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="class#SetupUIController#0;class#RootController#0" />
-            <element signature="class#DataSaver#0;class#RootController#0" />
-            <element signature="method#load#0;class#DataSaver#0;class#RootController#0" />
+            <element signature="e#16881#16882#0" expanded="true" />
+            <element signature="e#16929#16930#0" expanded="true" />
+            <element signature="e#16968#16969#0" expanded="true" />
+            <element signature="e#17007#17008#0" expanded="true" />
+            <element signature="e#17059#17060#0" expanded="true" />
+            <element signature="e#17107#17108#0" expanded="true" />
           </folding>
         </state>
       </provider>

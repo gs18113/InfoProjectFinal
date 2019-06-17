@@ -35,6 +35,7 @@ import javafx.util.Pair;
 import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.TesseractException;
 
+import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
@@ -111,6 +112,8 @@ public class RootController implements Initializable {
             }
             imageGroup.setVisible(true);
             textGroup.setVisible(false);
+            previewCheckBox.setSelected(false);
+            previewService.cancel();
         });
 
         loadImageButton.setOnAction(e -> {
@@ -124,24 +127,23 @@ public class RootController implements Initializable {
             fileChooser.setTitle("Load image...");
             File file = fileChooser.showOpenDialog(currentStage);
             imageView.setImage(new Image(file.toURI().toString()));
-            dataset = new ImageData("./save", imageView.getImage());
+            dataset = new ImageData("./save", file.toURI().toString());
         });
 
         imageBlankButton.setOnAction(e -> {
             imageBlankButton.setDisable(true);
             Pair imgRect = imageCropper.crop();
             BufferedImage img = (BufferedImage) imgRect.getKey();
-            Rectangle rect = (Rectangle) imgRect.getValue();
+            Bounds bounds = (Bounds) imgRect.getValue();
             try {
                 String result = instance.doOCR(img);
                 System.out.println("OCR result:" + result);
-                dataset.addData(new ImageBlank(rect, result));
+                dataset.addData(new ImageBlank(bounds, result));
                 statLabel.setText("Blank generation success!");
                 setupUIController.update();
             } catch (TesseractException ex) {
                 System.out.println(ex.getMessage());
             }
-            updateText();
         });
 
         //textGroup
@@ -420,12 +422,15 @@ public class RootController implements Initializable {
             });
         }
 
-        Pair<BufferedImage, Rectangle> crop() {
+        Pair<BufferedImage, Bounds> crop() {
             SnapshotParameters parameters = new SnapshotParameters();
             parameters.setFill(Color.TRANSPARENT);
             Bounds bounds = rect.getBoundsInParent();
+            parameters.setViewport(new Rectangle2D( bounds.getMinX(), bounds.getMinY(), (int) bounds.getWidth(), (int) bounds.getHeight()));
+
             WritableImage wi = new WritableImage((int) bounds.getWidth(), (int) bounds.getHeight());
             imageView.snapshot(parameters, wi);
+
 
             BufferedImage bufImageARGB = SwingFXUtils.fromFXImage(wi, null);
             //BufferedImage bufImageRGB = new BufferedImage(bufImageARGB.getWidth(), bufImageARGB.getHeight(), BufferedImage.OPAQUE);
@@ -436,11 +441,24 @@ public class RootController implements Initializable {
             Graphics2D graphics = bufImageGray.createGraphics();
             graphics.drawImage(bufImageARGB, 0, 0, null);
 
+            /*
+            try {
+                File file = new File("./saveddata/cap.jpg");
+                file.createNewFile();
+
+                ImageIO.write(bufImageGray, "jpg", file);
+
+                System.out.println( "Image saved to " + file.getAbsolutePath());
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            */
+
             rect = new Rectangle(0, 0, 0, 0);
             imageGroup.getChildren().add(rect);
 
-//			return new Pair(bufImageRGB, rect);
-            return new Pair(bufImageGray, rect);
+            return new Pair(bufImageGray, bounds);
 
         }
     }
@@ -494,15 +512,16 @@ public class RootController implements Initializable {
                     imageGroup.setVisible(false);
                     textGroup.setVisible(true);
                     textArea.setText(((TextData) dataset).getFullText());
-                    System.out.println((((TextData) dataset).getFullText()));
                     updateText();
+                    setupUIController.update();
                 } else {
                     imageGroup.setVisible(true);
                     textGroup.setVisible(false);
                     imageView.setImage(((ImageData) dataset).getFullImage());
                     for (int i = 0; i < dataset.getBlanks().size(); i++) {
-                        imageGroup.getChildren().add(((ImageBlank) dataset.getBlanks().get(i)).getRect());
+                        imageViewGroup.getChildren().add(((ImageBlank) dataset.getBlanks().get(i)).getRect());
                     }
+                    setupUIController.update();
                 }
                 return;
             } catch (Exception e) {

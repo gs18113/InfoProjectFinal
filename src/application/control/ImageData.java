@@ -4,15 +4,15 @@ import javafx.scene.image.Image;
 
 public class ImageData extends DataSet {
 
-	Image fullImage;
+ 	String imagePath;
 
 	public Image getFullImage() {
-		return fullImage;
+		return new Image(imagePath);
 	}
 
-	public ImageData(String savedir, Image fullImage) {
+	public ImageData(String savedir, String imagePath) {
 		super(savedir);
-		this.fullImage = fullImage;
+		this.imagePath = imagePath;
 		this.dataType = "Image";
 	}
 
